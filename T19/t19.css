@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:wght@500&family=Quicksand:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:wght@500&family=Quicksand:wght@400;700&display=swap');
 *,
 *::before,
 *::after {
@@ -7,19 +7,23 @@
 }
 
 body{
+  color: white;
+  background-image: url("t19.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center ;
 }
 
 .page{
-  background: rgb(250, 229, 210);
+  background: rgba(0, 0, 0, 0.5);
   width: 94%;
   min-height: 92vh;
   padding: 3em;
-  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 3em rgba(255,255,255,0.15);
   margin-bottom: 1em;
   justify-content: center;
+  border-radius: 1.8rem;
 }
 
 #topbar{
@@ -33,6 +37,7 @@ body{
 
 #logo{
   padding-right: 30%;
+  font-size: 1.5rem;
 }
 
 .nav:not(:first-child,:last-child){
@@ -41,17 +46,11 @@ body{
 
 .nav:last-child{
   padding-left: 15rem;
-  cursor: pointer;
-  height: 1.5em;
-  width: 13ch;
-  background: black;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
+  padding: 0.5rem
 }
 
 .nav:nth-last-child(2){
-  padding-right: 15em;
+  padding-right: 18em;
 }
 
 .main{
@@ -75,33 +74,28 @@ body{
 }
 
 .para--main{
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-family:'quicksand', sans-serif ;
   font-weight: 900;
+  font-size: 1.2rem;
 
 }
 
 #plan{
-
+  display: flex;
   cursor: pointer;
   border: 0;
-  height: 2em;
-  width: 12ch;
-  background: black;
+  height: 1.7em;
+  background: green;
   color: white;
   padding: 0.5rem;
-  position: relative;
+  max-width: 10ch;
   border-radius: 0.3rem;
-  font-family: "Amatic SC" , sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.9rem;
 }
 
-#mimg{
-  background: black;
-  height: 58vh;
-  width: 35vw;
-  padding-left: 3em;
-  border-radius: 2rem;
+.green{
+  color: green;
 }
-
