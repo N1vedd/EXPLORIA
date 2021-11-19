@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:wght@500&family=Quicksand:wght@400;700&family=Roboto:wght@500&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.page{
+  background: rgb(250, 229, 210);
+  width: 94%;
+  min-height: 92vh;
+  padding: 3em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+#topbar{
+  display: flex;
+  font-family:'quicksand', sans-serif ;
+  font-weight: 900;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom:4em ;
+}
+
+#logo{
+  padding-right: 30%;
+}
+
+.nav:not(:first-child,:last-child){
+  padding-left: 3rem;
+}
+
+.nav:last-child{
+  padding-left: 15rem;
+  cursor: pointer;
+  height: 1.5em;
+  width: 13ch;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.nav:nth-last-child(2){
+  padding-right: 15em;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+}
+
+.main-text{
+  max-width: 45em;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+  padding-right: 4em;
+  padding-left: 2em;
+}
+
+#main-title{
+  font-family: 'Poppins', sans-serif;
+  font-size:3.5rem ;
+  line-height: 3rem;
+}
+
+.para--main{
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  font-family:'quicksand', sans-serif ;
+  font-weight: 900;
+
+}
+
+#plan{
+
+  cursor: pointer;
+  border: 0;
+  height: 2em;
+  width: 12ch;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 0.3rem;
+  font-family: "Amatic SC" , sans-serif;
+  font-size: 1.6rem;
+}
+
+#mimg{
+  background: black;
+  height: 58vh;
+  width: 35vw;
+  padding-left: 3em;
+  border-radius: 2rem;
+}
+
