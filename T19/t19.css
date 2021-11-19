@@ -62,7 +62,7 @@ body{
   max-width: 45em;
   display: flex;
   flex-direction: column;
-  padding-top: 3em;
+  padding-top: 4em;
   padding-right: 4em;
   padding-left: 2em;
 }
@@ -75,7 +75,7 @@ body{
 
 .para--main{
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
   font-family:'quicksand', sans-serif ;
   font-weight: 900;
   font-size: 1.2rem;
