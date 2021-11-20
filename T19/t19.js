@@ -1,6 +1,7 @@
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll('.nav-links li');
 
+
 window.addEventListener('mousemove',cursor);
 
 function cursor(e){
