@@ -6,54 +6,74 @@
   box-sizing: border-box;
 }
 
-body{
+body{ 
   color: white;
   background-image: url("t19.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center ;
+  font-family:'quicksand', sans-serif ;
+  font-weight: 900;
 }
 
 .page{
-  background: rgba(0, 0, 0, 0.5);
   width: 94%;
   min-height: 92vh;
   padding: 3em;
-  box-shadow: 0 0 3em rgba(255,255,255,0.15);
   margin-bottom: 1em;
   justify-content: center;
   border-radius: 1.8rem;
 }
 
-#topbar{
+.cursor{
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid green;
+  /*border-radius: 50%;*/
+  transition: 2s;
+  position: absolute;
+  transform: rotate(-45deg) translate(0%,-50%);
+  pointer-events: none;
+  transition: all 0.5s ease;
+  transition-property: background,transform;
+  transform-origin: 50% 50%;
+  z-index: -1;
+
+}
+
+.link-grow{
+  transform: scale(4.0) rotate(90deg);
+  border-radius: 50% 50%;
+  background: green;
+}
+
+nav{
   display: flex;
-  font-family:'quicksand', sans-serif ;
-  font-weight: 900;
-  flex-direction: row;
-  width: 100%;
-  padding-bottom:4em ;
+  justify-content: space-between;
+  width: 93%;
+  min-height:10vh ;
+  align-items: center;
+  margin: auto;
 }
 
-#logo{
-  padding-right: 30%;
-  font-size: 1.5rem;
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
-.nav:not(:first-child,:last-child){
-  padding-left: 3rem;
+.nav-links,h1{
+  flex: 1;
 }
 
-.nav:last-child{
-  padding-left: 15rem;
-  padding: 0.5rem
+.nav-links li{
+  padding: 1rem;
 }
 
-.nav:nth-last-child(2){
-  padding-right: 18em;
-}
 
 .main{
+  padding-top: 3em;
   display: flex;
   flex-direction: row;
 }
@@ -76,8 +96,6 @@ body{
 .para--main{
   padding-top: 1.5rem;
   padding-bottom: 3rem;
-  font-family:'quicksand', sans-serif ;
-  font-weight: 900;
   font-size: 1.2rem;
 
 }
@@ -87,13 +105,19 @@ body{
   cursor: pointer;
   border: 0;
   height: 1.7em;
-  background: green;
-  color: white;
+  background: rgba(0,128,0,0);
+  color: green;
   padding: 0.5rem;
   max-width: 10ch;
   border-radius: 0.3rem;
   font-family: 'Poppins', sans-serif;
   font-size: 1.9rem;
+}
+
+#plan:hover{
+  color: black;
+  background: green;
+  transition: all 200ms ease-in;
 }
 
 .green{
