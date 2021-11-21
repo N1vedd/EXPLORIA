@@ -1,20 +1,6 @@
-let mouseCursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll('.nav-links li');
+let search = document.querySelector("#search");
+let page = document.querySelector(".slide--1");
 
-
-window.addEventListener('mousemove',cursor);
-
-function cursor(e){
-	mouseCursor.style.top=e.pageY+"px";
-	mouseCursor.style.left=e.pageX+"px"; 
-}
-
-navLinks.forEach(link => {
-	link.addEventListener('mouseleave',() => {
-		mouseCursor.classList.remove("link-grow");
-	});
-	link.addEventListener('mouseover',() => {
-		mouseCursor.classList.add("link-grow");
-	});
-
+search.addEventListener('click',function(){
+	page.classList.add("sliding");
 });
