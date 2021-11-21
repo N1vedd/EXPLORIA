@@ -4,63 +4,72 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+html{
+  height: 100%;
+}
 body{ 
+  height: 100vh;
   color: white;
-  background-image: url("t19.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center ;
   font-family:'quicksand', sans-serif ;
   font-weight: 900;
+  
+}
+
+.container{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 .page{
-  width: 94%;
-  min-height: 92vh;
-  padding: 3em;
-  margin-bottom: 1em;
+  display: flex;
+  display: block;
+  height: 100vh;
   justify-content: center;
-  border-radius: 1.8rem;
+  scroll-snap-align: start;
 }
 
-.cursor{
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 4px solid green;
-  /*border-radius: 50%;*/
-  transition: 2s;
-  position: absolute;
-  transform: rotate(-45deg) translate(0%,-50%);
-  pointer-events: none;
-  transition: all 0.5s ease;
-  transition-property: background,transform;
-  transform-origin: 50% 50%;
-  z-index: -1;
-
+/*.slide{
+  display: flex;
+  flex-direction: row;
+  display: block;
+  height: 100vh;
+  min-width: 100vw;
 }
-
-.link-grow{
-  transform: scale(3.0) rotate(90deg);
-  border-radius: 50% 50%;
-  background: green;
-}
+*/
+.page--1{
+  background: rgba(0, 0, 0, 0.6);
+  background-image: url("page1.jpg");
+  background-size: cover;
+  background-blend-mode:multiply ;
+}  
 
 nav{
+  padding: 3em;
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  width: 93%;
+  width: 95%;
   min-height:10vh ;
   align-items: center;
   margin: auto;
 }
 
+#logo{
+  font-size: 1.5rem;
+  color: green;
+}
+
 .nav-links{
+
   display: flex;
   justify-content: space-between;
   list-style: none;
+  z-index: 1;
 }
 
 .nav-links,h1{
@@ -68,12 +77,20 @@ nav{
 }
 
 .nav-links li{
-  padding: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
 }
 
 
+
+#contact{
+  border: 2px solid green;
+  border-radius: 0.8rem;
+}
+
 .main{
-  padding-top: 3em;
+  padding: 3em;
+  padding-top: 10em;
   display: flex;
   flex-direction: row;
 }
@@ -111,11 +128,89 @@ nav{
   max-width: 10ch;
   border-radius: 0.3rem;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.35s ease-in;
   font-size: 2rem;
+}
+
+#plan:hover{
+  background: green;
+  color: black;
+  transition-property: background,color;
 }
 
 .green{
   color: green;
 }
 
+.page--2{
+  background: black;
+  }
 
+
+
+#abt-us{
+  display: inline-block;
+  background: white;
+  color: Green;
+  padding-left: 3em;
+  padding-right: 1rem;
+  margin-top: 2.8em;
+  font-family: 'Poppins', sans-serif;
+  font-size:3.5rem ;
+}
+
+#abt{
+  font-size: 1.5rem;
+  padding-left: 9.5em;
+  padding-top: 5rem;
+  padding-bottom: 3em;
+  width: 70vw;
+}
+
+#abt-button {
+  cursor: pointer;
+  border: 0;
+  height: 2em;
+  border: 3px solid green;
+  font-size: 1.9rem;
+  margin-left: 70vw;
+  padding-left: 3rem;
+  padding-top: 0.6rem;
+
+}
+
+
+.page--3{
+  background: black;
+
+}
+
+#header{
+  display: block;
+  background: #404040;
+  height: 5em;
+}
+
+#services{
+  display: inline-block;
+  color: green;
+  border-radius: 0.8rem;
+  text-decoration: underline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.8em;
+  margin-left: 7.5em;
+  font-family: 'Poppins', sans-serif;
+  font-size:3.5rem ;
+  
+
+}
+
+/*.slide--1{
+  margin-left: -100%;
+  background: black;
+}
+
+.slide--2{
+  background: black;
+}*/
