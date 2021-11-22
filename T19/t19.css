@@ -130,7 +130,9 @@ nav{
   background: rgba(0,128,0,0);
   color: white;
   padding: 0rem 0.5rem 0.5rem 1rem;
-  max-width: 10ch;
+  padding-right: 0px;
+  padding-left: 2.5rem;
+  max-width: 13ch;
   border-radius: 0.3rem;
   font-family: 'Poppins', sans-serif;
   transition: all 0.35s ease-in;
@@ -263,11 +265,12 @@ select{
   background: black;
 }
 
-.placedesc{
+#placedesc{
+  color: white;
   font-size: 1.5rem;
-  padding-left: 33%;
+  padding-left: 25%;
   padding-top: 2rem;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   width: 90vw;
 }
 
@@ -275,24 +278,32 @@ select{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 3em;
   padding-left: 5.5em;
   padding-right: 6em;
+  padding-top: 4em;
+}
+
+#card1{
+  margin-left: 3em;
+}
+
+#card3{
+  margin-right: 3em;
 }
 
 .cord{
   background-color: green;
   margin:0 ;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   background-size: cover;
   max-width: 25ch;
-  padding: 5rem 0 0;
+  padding: 7rem 0 0;
   color: white;
   text-align: left;
   border-radius: 0.8rem;
   overflow: hidden;
   transition: transform 300ms ease-in;
-  transform: scale(1.3);
+  transform: scale(1.5);
 }
 
 
@@ -302,13 +313,14 @@ select{
   background: linear-gradient(rgba(0,0,0,0),
     rgba(0,0,0,0.5)10%,
     rgba(0,0,0,1));
-  transform: translateY(60%);
+  transform: translateY(50%);
   transition: transform 500ms ease-in;
 }
 
 .card-title{
   position: relative;
   width: max-content;
+  margin-bottom: 1.5rem;
 }
 
 .card-title::after{
@@ -318,23 +330,19 @@ select{
   height: 4px;
   left:calc(var(--padding)*-1);
   bottom: 0;
-  background: #ee6352;
+  background: green;
   transform: scaleX(0);
   transform-origin:left ;
   transition: transform 500ms ease;
 }
 
-.card-body{
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
 
 .buton{
   cursor: pointer;
   text-decoration: none;
   display: inline;
   color: black;
-  background-color:#ee6352 ;
+  background-color:green ;
   padding: 0.5em 1.25em;
   border-radius: 0.5rem;
 }
@@ -344,7 +352,7 @@ select{
 }
 
 .cord:hover{
-  transform: scale(1.38);
+  transform: scale(1.515);
 }
 
 
@@ -382,4 +390,81 @@ select{
   padding-top: 0.6rem;
   margin-top: 3rem;
 
+}
+
+.modal-container{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7) ;
+  min-width: 100vw;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+}
+
+.modal{
+  position: fixed;
+  background: #C1C1C1;
+  width: 60%;
+  min-height: 80vh;
+  padding-left: 1rem;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+
+.mclose{
+  cursor: pointer;
+  color: green;
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  padding-left: 95%;
+  text-shadow: 1px 1px black;
+}
+
+.mheading{
+  color: green;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  text-shadow: 2px 2px black;
+}
+
+.mcontent{
+  color:black;
+  font-size: 1.8rem;
+  padding-bottom: 0.8rem;
+
+}
+
+.hotel-heading{
+  color: green;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px black;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.mhotel{
+  font-size: 1.5rem;
+  color: black;
+}
+
+.mfood{
+  font-size: 1.5rem;
+  color: black;
+}
+
+.modal-appear{
+  visibility: visible;
+  opacity: 1;
+}
+
+.smodal-appear{
+  visibility: visible;
 }
