@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:wght@500&family=Quicksand:wght@400;700&display=swap');
 
 
+
+
 *,
 *::before,
 *::after {
@@ -9,6 +11,7 @@
   margin: 0;
   padding: 0;
 }
+
 
 html{
   height: 100%;
@@ -129,21 +132,17 @@ nav{
   height: 1.7em;
   background: rgba(0,128,0,0);
   color: white;
-  padding: 0rem 0.5rem 0.5rem 1rem;
-  padding-right: 0px;
+  padding-bottom: 0.5rem;
+  padding-right: 2.5rem;
   padding-left: 2.5rem;
-  max-width: 13ch;
   border-radius: 0.3rem;
+  max-width: 20ch;
   font-family: 'Poppins', sans-serif;
   transition: all 0.35s ease-in;
   font-size: 2rem;
 }
 
-#plan:hover{
-  background: green;
-  color: black;
-  transition-property: background,color;
-}
+
 
 .green{
   color: green;
@@ -167,24 +166,18 @@ nav{
 }
 
 #abt{
-  font-size: 1.5rem;
-  padding-left: 9.5em;
-  padding-top: 5rem;
-  padding-bottom: 3em;
+  display: inline-block;
+  border: 4px solid green ;
+  font-size: 1.8rem;
+  padding-right: 9.5em;
+  padding-left: 1rem;
+  margin-left: 30%;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 70vw;
 }
 
-#abt-button {
-  cursor: pointer;
-  border: 0;
-  height: 2em;
-  border: 3px solid green;
-  font-size: 1.9rem;
-  margin-left: 70vw;
-  padding-left: 3rem;
-  padding-top: 0.6rem;
-
-}
 
 
 .page--3{
@@ -283,16 +276,9 @@ select{
   padding-top: 4em;
 }
 
-#card1{
-  margin-left: 3em;
-}
 
-#card3{
-  margin-right: 3em;
-}
 
 .cord{
-  background-color: green;
   margin:0 ;
   margin-bottom: 1em;
   background-size: cover;
@@ -306,6 +292,19 @@ select{
   transform: scale(1.5);
 }
 
+#card1{
+  margin-left: 3em;
+
+}
+
+#card2{
+
+}
+
+#card3{
+  margin-right: 3em;
+
+}
 
 .card-content{
   --padding: 1.5rem;
@@ -318,6 +317,7 @@ select{
 }
 
 .card-title{
+  font-size: 1.3rem;
   position: relative;
   width: max-content;
   margin-bottom: 1.5rem;
@@ -410,12 +410,14 @@ select{
 
 .modal{
   position: fixed;
-  background: #C1C1C1;
+  background: black;
   width: 60%;
   min-height: 80vh;
   padding-left: 1rem;
   visibility: hidden;
   transition: all 0.3s ease;
+  border: 5px solid green;
+  border-radius: 1rem;
 }
 
 
@@ -436,7 +438,7 @@ select{
 }
 
 .mcontent{
-  color:black;
+  color:white;
   font-size: 1.8rem;
   padding-bottom: 0.8rem;
 
@@ -452,12 +454,12 @@ select{
 
 .mhotel{
   font-size: 1.5rem;
-  color: black;
+  color: white;
 }
 
 .mfood{
   font-size: 1.5rem;
-  color: black;
+  color: white;
 }
 
 .modal-appear{
@@ -467,4 +469,32 @@ select{
 
 .smodal-appear{
   visibility: visible;
+}
+
+.page--4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  background-image: url("page4.jpg");
+  background-size: cover;
+  background-blend-mode:multiply ;
+}
+
+#contact-us{
+  border: 4px solid white;
+  border-radius: 0.8rem;
+  height: 60%;
+  width: 70%;
+  padding-left: 3rem;
+  padding-top: 5rem;
+  padding-right: 3rem;
+}
+
+#contactheading{
+  font-size: 3rem;
+}
+
+#cnt{
+  font-size: 2rem;
 }
