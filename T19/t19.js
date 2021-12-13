@@ -1,5 +1,5 @@
 let search = document.querySelector("#search");
-let back = document.querySelector(".back--2");
+let back = document.querySelector(".back");
 let page = document.querySelector(".slide--1");
 
 let modal= document.querySelector(".modal-container");
